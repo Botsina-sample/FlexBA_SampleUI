@@ -6,25 +6,35 @@
     xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
     xmlns:System="clr-namespace:System;assembly=mscorlib"
     x:Class="AUT_SampleUI.MainWindow"
-    Title="DXApplication" Height="700" Width="1100"
+    Title="DXApplication" Height="700" Width="1397"
     SnapsToDevicePixels="True" UseLayoutRounding="True"
-    dx:ThemeManager.ThemeName="Seven" SizeToContent="WidthAndHeight" ResizeMode="NoResize" Icon="pack://application:,,,/DevExpress.Images.v13.2;component/Images/Actions/Add_32x32.png"
+    dx:ThemeManager.ThemeName="Seven" Background="White" SizeToContent="WidthAndHeight" ResizeMode="NoResize" Icon="pack://application:,,,/DevExpress.Images.v13.2;component/Images/Actions/Add_32x32.png"
     >
-    <Grid HorizontalAlignment="Right" Height="690" Margin="0,0,-8,-21" VerticalAlignment="Top" Width="1100">
-        <GroupBox Header="" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Bottom" Height="680" Width="1090">
-            <Grid HorizontalAlignment="Left" Height="670" Margin="0,0,-24,-26" VerticalAlignment="Top" Width="1090">
-                <GroupBox Header="Thông Tin Chung" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="598" Width="432">
-                    <Grid HorizontalAlignment="Left" Height="494" VerticalAlignment="Top" Width="409">
-                        <TextBlock HorizontalAlignment="Left" Margin="36,50,0,0" TextWrapping="Wrap" Text="Mã Khách Hàng" VerticalAlignment="Top" Width="135"/>
-                        <TextBox HorizontalAlignment="Left" Height="23" Margin="131,47,0,0" TextWrapping="Wrap" Text="VIC006000018" VerticalAlignment="Top" Width="268" IsEnabled="False"/>
+    <Grid HorizontalAlignment="Center" Height="690" Margin="0,0,-8,-18" VerticalAlignment="Center" Width="1389">
+        <GroupBox Header="" Margin="0,0,0,19" VerticalAlignment="Bottom" Height="671" RenderTransformOrigin="0.5,0.5">
+            <GroupBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </GroupBox.RenderTransform>
+            <Grid HorizontalAlignment="Left" Height="670" Margin="0,0,0,-26" VerticalAlignment="Top" Width="452">
+
+                <GroupBox Header="Thông Tin Chung" HorizontalAlignment="Left" Margin="9,0,0,0" VerticalAlignment="Top" Height="608" Width="432">
+                    <Grid HorizontalAlignment="Left" Height="494" VerticalAlignment="Top" Width="432" Margin="0,0,-12,0">
+                        <TextBlock HorizontalAlignment="Left" Margin="82,49,0,0" TextWrapping="Wrap" Text="Mã Khách Hàng" VerticalAlignment="Top" Width="135"/>
+                        <TextBox HorizontalAlignment="Left" Height="23" Margin="171,47,0,0" TextWrapping="Wrap" Text="VIC006000018" VerticalAlignment="Top" Width="241" IsEnabled="False"/>
                         <RadioButton Content="Khách Hàng" HorizontalAlignment="Left" Margin="36,20,0,0" VerticalAlignment="Top"/>
                         <RadioButton Content="Khách Nước Ngoài" HorizontalAlignment="Left" Margin="131,20,0,0" VerticalAlignment="Top"/>
-                        <TextBlock HorizontalAlignment="Left" Margin="36,78,0,0" TextWrapping="Wrap" Text="Họ Và Tên Đệm" VerticalAlignment="Top"/>
-                        <TextBox HorizontalAlignment="Left" Height="22" Margin="131,75,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="268"/>
-                        <TextBox HorizontalAlignment="Left" Height="22" Margin="131,102,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="268"/>
-                        <TextBlock HorizontalAlignment="Left" Margin="99,105,0,0" TextWrapping="Wrap" Text="Tên" VerticalAlignment="Top"/>
-                        <TextBlock HorizontalAlignment="Left" Margin="72,133,0,0" TextWrapping="Wrap" Text="Giới Tính" VerticalAlignment="Top" Width="90"/>
-                        <dxe:ComboBoxEdit dx:ThemeManager.ThemeName="DeepBlue" HorizontalAlignment="Left" Margin="131,129,0,0" VerticalAlignment="Top" Width="268" IsEnabled="True" IsTextEditable="False" AllowRecreatePopupContent="False" AllowItemHighlighting="False" DisableExcessiveUpdatesInInplaceInactiveMode="False">
+                        <TextBlock HorizontalAlignment="Left" Margin="82,78,0,0" TextWrapping="Wrap" Text="Họ Và Tên Đệm" VerticalAlignment="Top"/>
+                        <TextBox HorizontalAlignment="Left" Height="22" Margin="171,75,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="241"/>
+                        <TextBox HorizontalAlignment="Left" Height="22" Margin="171,102,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="241"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="146,105,0,0" TextWrapping="Wrap" Text="Tên" VerticalAlignment="Top"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="119,132,0,0" TextWrapping="Wrap" Text="Giới Tính" VerticalAlignment="Top" Width="90"/>
+
+                        <dxe:ComboBoxEdit dx:ThemeManager.ThemeName="DeepBlue" HorizontalAlignment="Left" Margin="171,129,0,0" VerticalAlignment="Top" Width="241" IsEnabled="True" IsTextEditable="False" AllowRecreatePopupContent="False" AllowItemHighlighting="False" DisableExcessiveUpdatesInInplaceInactiveMode="False">
                             <dxe:ComboBoxEdit.StyleSettings>
                                 <dxe:ComboBoxStyleSettings HighlightedTextBackground="Yellow" HighlightedFontFamily="{x:Null}" HighlightedFontStyle="{x:Null}" HighlightedFontSize="{x:Null}" HighlightedTextForeground="Black" HighlightedFontWeight="{x:Null}"/>
                             </dxe:ComboBoxEdit.StyleSettings>
@@ -32,12 +42,63 @@
                             <dxe:ComboBoxEditItem>Nam</dxe:ComboBoxEditItem>
                             <dxe:ComboBoxEditItem>Nu</dxe:ComboBoxEditItem>
                         </dxe:ComboBoxEdit>
-                        <TextBlock HorizontalAlignment="Left" Margin="64,159,0,0" TextWrapping="Wrap" Text="Ngày Sinh" VerticalAlignment="Top"/>
-                        <TextBox HorizontalAlignment="Left" Height="23" Margin="131,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="268"/>
+
+                        <TextBlock HorizontalAlignment="Left" Margin="112,159,0,0" TextWrapping="Wrap" Text="Ngày Sinh" VerticalAlignment="Top"/>
+                        <TextBox HorizontalAlignment="Left" Height="23" Margin="171,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="241"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="92,215,0,0" TextWrapping="Wrap" Text="Số Điện Thoại" VerticalAlignment="Top"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="63,244,0,0" TextWrapping="Wrap" Text="Số Điện Thoại Khác" VerticalAlignment="Top"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="99,271,0,0" TextWrapping="Wrap" Text="Facebook ID" VerticalAlignment="Top"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="136,298,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="78,327,0,0" TextWrapping="Wrap" Text="NVTV Phụ Trách" VerticalAlignment="Top"/>
+                        <TextBlock HorizontalAlignment="Left" Margin="23,354,0,0" TextWrapping="Wrap" Text="Tham Gia CTKH Thân Thiết" VerticalAlignment="Top" Width="155"/>
+                        <TextBox HorizontalAlignment="Left" Height="24" Margin="171,212,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="241" PreviewTextInput="MainPhoneNumber"/>
+                        <TextBox HorizontalAlignment="Left" Height="22" Margin="171,241,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="241" PreviewTextInput="OtherPhoneNumber"/>
+                        <TextBox HorizontalAlignment="Left" Height="22" Margin="171,268,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="241"/>
+                        <TextBox HorizontalAlignment="Left" Height="24" Margin="171,295,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="241"/>
+
+                        <dxe:ComboBoxEdit dx:ThemeManager.ThemeName="DeepBlue" HorizontalAlignment="Left" Margin="171,324,0,0" VerticalAlignment="Top" Width="241">
+                            <dxe:ComboBoxEditItem>KXN51 : Nguyen Van A</dxe:ComboBoxEditItem>
+                            <dxe:ComboBoxEditItem>AXM41 : Hoang Thi Xuan Mai</dxe:ComboBoxEditItem>
+                            <dxe:ComboBoxEditItem>ACV46 : Tran Minh Quyen</dxe:ComboBoxEditItem>
+                            <dxe:ComboBoxEditItem>EXF43 : Bui Minh Quoc</dxe:ComboBoxEditItem>
+                            <dxe:ComboBoxEditItem>DE43Q : Nguyen Than The Vinh</dxe:ComboBoxEditItem>
+                        </dxe:ComboBoxEdit>
+
+                        <dxe:ComboBoxEdit dx:ThemeManager.ThemeName="DeepBlue" HorizontalAlignment="Left" Margin="171,351,0,0" VerticalAlignment="Top" Width="241">
+                            <dxe:ComboBoxEditItem>Co</dxe:ComboBoxEditItem>
+                            <dxe:ComboBoxEditItem>Khong</dxe:ComboBoxEditItem>
+
+                        </dxe:ComboBoxEdit>
+
+
+
                     </Grid>
                 </GroupBox>
+
+
+
+
+
+                <GroupBox Header="Địa Chỉ" HorizontalAlignment="Stretch" Margin="460,0,-459,386" VerticalAlignment="Stretch">
+                    <Grid>
+
+                    </Grid>
+                </GroupBox>
+
+
+
+
+
+                <GroupBox Header="Thông Tin Da" HorizontalAlignment="Stretch" Margin="927,0,-902,62" VerticalAlignment="Stretch" Height="608">
+                    <Grid>
+
+                    </Grid>
+                </GroupBox>
+
+
             </Grid>
         </GroupBox>
+
     </Grid>
 
 </dx:DXWindow>

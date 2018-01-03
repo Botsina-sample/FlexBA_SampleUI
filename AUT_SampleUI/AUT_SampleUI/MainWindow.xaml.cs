@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using DevExpress.Xpf.Core;
+using System.Text.RegularExpressions;
 
 
 namespace AUT_SampleUI
@@ -22,6 +23,24 @@ namespace AUT_SampleUI
             InitializeComponent();
 
         }
+
+        private void MainPhoneNumber(object sender, TextCompositionEventArgs e)
+        {
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
+        }
+
+        private void OtherPhoneNumber(object sender, TextCompositionEventArgs e)
+        {
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
+        }
+
+       
+
+        
+
+
 
     }
 
